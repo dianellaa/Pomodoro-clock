@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Clock</title>
+  <link rel="stylesheet" href="stylepomodoro.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Pomodoro Clock</h1>
+    <div class="timer" id="timer">25:00</div>
+    <div class="controls">
+      <label for="workDuration">Work:</label>
+      <input type="number" id="workDuration" value="25">
+      <label for="breakDuration">Break:</label>
+      <input type="number" id="breakDuration" value="5">
+      <button id="startButton">Start</button>
+      <button id="resetButton">Reset</button>
+    </div>
+  </div>
+  <audio id="alarmSound" src="alarm.mp3" preload="auto"></audio>
+  <script src="pomodoro.js"></script>
+</body>
+</html>
